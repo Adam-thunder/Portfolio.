@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aathavan V.S | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --light:#e6e6e6;
+  --dark:#0b0b0b;
+  --card:#ffffff;
+  --muted:#6f6f6f;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+
+body{
+  background:var(--light);
+  color:#000;
+}
+
+/* NAVBAR */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1000;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 60px;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:35px;
+  align-items:center;
+}
+
+nav a{
+  text-decoration:none;
+  color:#fff;
+  font-weight:500;
+}
+
+.contact-btn{
+  background:#fff;
+  color:#000;
+  padding:10px 22px;
+  border-radius:30px;
+  font-weight:600;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+}
+
+.hero-left{
+  background:var(--light);
+  padding:140px 80px;
+}
+
+.hero-left h4{
+  font-weight:400;
+  margin-bottom:15px;
+}
+
+.hero-left h1{
+  font-size:4rem;
+  line-height:1.1;
+  margin-bottom:10px;
+}
+
+.hero-left p{
+  color:var(--muted);
+  font-weight:500;
+}
+
+.socials{
+  display:flex;
+  gap:15px;
+  margin-top:40px;
+}
+
+.socials a{
+  width:45px;
+  height:45px;
+  background:#d9d9d9;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:10px;
+  text-decoration:none;
+  color:#000;
+  font-weight:600;
+}
+
+/* RIGHT */
+.hero-right{
+  background:var(--dark);
+  clip-path:polygon(10% 0,100% 0,100% 100%,0 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-right img{
+  max-height:85%;
+  object-fit:contain;
+}
+
+/* SECTIONS */
+section{
+  padding:110px 80px;
+}
+
+.section-title{
+  font-size:2.2rem;
+  margin-bottom:40px;
+}
+
+/* ABOUT */
+.about{
+  background:#f4f4f4;
+}
+
+.about p{
+  max-width:900px;
+  color:#444;
+  line-height:1.8;
+  font-size:1rem;
+}
+
+/* SKILLS */
+.skills{
+  background:#fff;
+}
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.skill-card{
+  background:var(--card);
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:.3s;
+}
+
+.skill-card:hover{
+  transform:translateY(-8px);
+}
+
+.skill-card h3{
+  margin-bottom:12px;
+  font-size:1.2rem;
+}
+
+.skill-card p{
+  color:#555;
+  font-size:.95rem;
+  line-height:1.6;
+}
+
+/* PROJECTS */
+.projects{
+  background:#f4f4f4;
+}
+
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.project-card{
+  background:#fff;
+  padding:30px;
+  border-radius:18px;
+  transition:.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-8px);
+}
+
+.project-card h3{
+  margin-bottom:10px;
+}
+
+/* CONTACT */
+.contact{
+  background:#0b0b0b;
+  color:#fff;
+  text-align:center;
+}
+
+.contact a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+  }
+  .hero-right{
+    clip-path:none;
+    padding:40px 0;
+  }
+  nav ul{
+    display:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <strong style="color:white">AVS</strong>
+    <ul>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Portfolio</a></li>
+      <li><a class="contact-btn" href="#contact">CONTACT ME</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-left">
+    <h4>Hi, I am</h4>
+    <h1>Aathavan<br>V.S</h1>
+    <p>ECE Student / Embedded & Software Enthusiast</p>
+
+    <div class="socials">
+      <a href="#">@</a>
+      <a href="#">GH</a>
+      <a href="#">IN</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="adam (1).png" alt="Profile Image">
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>
+    I am a second-year B.Tech Electronics and Communication Engineering student at
+    SRM TRP Engineering College, Tiruchirappalli. I have a strong interest in
+    embedded systems, electronics, and software development. I enjoy working on
+    practical projects that combine hardware and software to solve real-world
+    problems. I am a fast learner with good teamwork and communication skills,
+    always looking to improve my technical expertise.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <p>C, C++, Python</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Web (Basics)</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Electronics / Core ECE</h3>
+      <p>
+        Arduino, Embedded Systems, Basic Circuit Design,
+        PCB Basics, IoT Fundamentals, Soldering
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Tools</h3>
+      <p>
+        VS Code, Git & GitHub, Arduino IDE,
+        Proteus, Tinkercad
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Soft Skills</h3>
+      <p>
+        Communication, Teamwork, Problem Solving,
+        Time Management, Fast Learner
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>SAR-X Disaster Management Drone</h3>
+      <p>Embedded drone system for disaster monitoring and rescue operations.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Agrinova – AI Agriculture Assistant</h3>
+      <p>AI-based agriculture assistant providing crop insights and guidance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>Email: <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></p>
+</section>
+
+</body>
+</html>
